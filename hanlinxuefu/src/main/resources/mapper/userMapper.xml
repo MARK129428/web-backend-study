@@ -1,0 +1,9 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hhk.hanlinxuefu.dao.UserDao">
+    <select id="login" resultType="com.hhk.hanlinxuefu.entry.User">
+        SELECT * FROM USER WHERE id = #{id}
+    </select>
+</mapper>
